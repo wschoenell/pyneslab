@@ -1,1 +1,6 @@
-__author__ = 'william'
+#!/usr/bin/env python
+import sys
+
+from pyneslab.scripts import chiller_control
+
+chiller_control(sys.argv)
