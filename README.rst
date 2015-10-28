@@ -1,16 +1,30 @@
 Python module for NESLAB chiller control
 ----------------------------------------
 
-[![Build Status](https://travis-ci.org/wschoenell/pyneslab.svg?branch=master)](https://travis-ci.org/wschoenell/pyneslab)
-[![Coverage Status](https://coveralls.io/repos/wschoenell/pyneslab/badge.svg?branch=master&service=github)](https://coveralls.io/github/pyneslab/pyneslab?branch=master)
+Python Scripts and API to control Thermo Scientific Recirculating Chillers
 
-Thermo Scientific Recirculating Chillers
+.. image:: https://travis-ci.org/wschoenell/pyneslab.svg?branch=master
+    :target: https://travis-ci.org/wschoenell/pyneslab
+
+.. image:: https://coveralls.io/repos/wschoenell/pyneslab/badge.svg?branch=master&service=github
+    :target: https://coveralls.io/github/pyneslab/pyneslab?branch=master
+
 
 Installation
 ------------
 ::
 
     pip install https://github.com/wschoenell/pyneslab.git
+
+Usage
+-----
+
+
+
+Tested chillers
+---------------
+
+.. Neslab ThermoFlex 2500 Recirculating Chiller with RS232 connection
 
 Contact
 -------
