@@ -1,6 +1,9 @@
 Python module for NESLAB chiller control
 ----------------------------------------
 
+[![Build Status](https://travis-ci.org/wschoenell/pyneslab.svg?branch=master)](https://travis-ci.org/wschoenell/pyneslab)
+[![Coverage Status](https://coveralls.io/repos/wschoenell/pyneslab/badge.svg?branch=master&service=github)](https://coveralls.io/github/pyneslab/pyneslab?branch=master)
+
 Thermo Scientific Recirculating Chillers
 
 Installation
@@ -12,6 +15,7 @@ Installation
 Contact
 -------
 
+For questions, suggestions and bugs, please open an issue on github: https://github.com/wschoenell/pyneslab/issues
 
 License
 -------
