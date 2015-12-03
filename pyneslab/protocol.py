@@ -24,9 +24,9 @@ LEAD = {'RS232': '\xCA', 'RS485': '\xCC'}
 command_list = {
     # REQUEST STATUS
     'req_ack': ['Protocol version v1=0; v2=1', '\x00\x00', None],
-    'req_sw_ver': ['Controller SW version', '\x02\x01{d1}', None],
-    'req_display_msg': ['Display message in ASCII', '\x02\x00', None],
-    'req_status': ['Display message in ASCII', '\x02\x00', None],
+    'req_sw_ver': ['Controller SW version', '\x02\x00', None],
+    'req_display_msg': ['Display message in ASCII', '\x07\x00', None],
+    'req_status': ['Display message in ASCII', '\x09\x00', None],
     # REQUEST MEASUREMENTS
     'req_flow1': ['Process Fluid Flow', '\x10\x00', None],
     'req_temp1': ['Process Fluid Supply Temperature (RTD1)', '\x20\x00', None],
