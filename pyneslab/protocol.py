@@ -26,7 +26,7 @@ command_list = {
     'req_ack': ['Protocol version v1=0; v2=1', '\x00\x00', None],
     'req_sw_ver': ['Controller SW version', '\x02\x00', None],
     'req_display_msg': ['Display message in ASCII', '\x07\x00', None],
-    'req_status': ['Display message in ASCII', '\x09\x00', None],
+    'req_status': ['Status', '\x09\x00', None],
     # REQUEST MEASUREMENTS
     'req_flow1': ['Process Fluid Flow', '\x10\x00', None],
     'req_temp1': ['Process Fluid Supply Temperature (RTD1)', '\x20\x00', None],
@@ -230,3 +230,12 @@ def read_analog_values(response):
     precision = 10 ** -(ord(response[5]) & 0b00001111)
     data = struct.unpack('H', '%s%s' % (response[7], response[6]))[0]
     return n_bytes, unit, precision, data
+
+def read_msg(response):
+    """
+    Returs display message.
+    :param response:
+    :return:
+    """
+    if not check_response_error(response):
+        n_bytes = ord(response[4])
